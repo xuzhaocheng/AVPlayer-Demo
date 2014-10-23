@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6BF51E8719F8F0E00000754A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF51E8619F8F0E00000754A /* main.m */; };
 		6BF51E8A19F8F0E00000754A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF51E8919F8F0E00000754A /* AppDelegate.m */; };
-		6BF51E8D19F8F0E10000754A /* AVPlayer_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BF51E8B19F8F0E00000754A /* AVPlayer_Demo.xcdatamodeld */; };
 		6BF51E9019F8F0E10000754A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF51E8F19F8F0E10000754A /* ViewController.m */; };
 		6BF51E9319F8F0E10000754A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF51E9119F8F0E10000754A /* Main.storyboard */; };
 		6BF51E9519F8F0E10000754A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF51E9419F8F0E10000754A /* Images.xcassets */; };
@@ -33,7 +32,6 @@
 		6BF51E8619F8F0E00000754A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BF51E8819F8F0E00000754A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BF51E8919F8F0E00000754A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BF51E8C19F8F0E00000754A /* AVPlayer_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AVPlayer_Demo.xcdatamodel; sourceTree = "<group>"; };
 		6BF51E8E19F8F0E10000754A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6BF51E8F19F8F0E10000754A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6BF51E9219F8F0E10000754A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				6BF51E9119F8F0E10000754A /* Main.storyboard */,
 				6BF51E9419F8F0E10000754A /* Images.xcassets */,
 				6BF51E9619F8F0E10000754A /* LaunchScreen.xib */,
-				6BF51E8B19F8F0E00000754A /* AVPlayer_Demo.xcdatamodeld */,
 				6BF51E8419F8F0E00000754A /* Supporting Files */,
 			);
 			path = "AVPlayer Demo";
@@ -223,7 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BF51E8A19F8F0E00000754A /* AppDelegate.m in Sources */,
-				6BF51E8D19F8F0E10000754A /* AVPlayer_Demo.xcdatamodeld in Sources */,
 				6BF51E9019F8F0E10000754A /* ViewController.m in Sources */,
 				6BF51E8719F8F0E00000754A /* main.m in Sources */,
 			);
@@ -416,6 +412,7 @@
 				6BF51EA919F8F0E10000754A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BF51EAA19F8F0E10000754A /* Build configuration list for PBXNativeTarget "AVPlayer DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,21 +421,9 @@
 				6BF51EAC19F8F0E10000754A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6BF51E8B19F8F0E00000754A /* AVPlayer_Demo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6BF51E8C19F8F0E00000754A /* AVPlayer_Demo.xcdatamodel */,
-			);
-			currentVersion = 6BF51E8C19F8F0E00000754A /* AVPlayer_Demo.xcdatamodel */;
-			path = AVPlayer_Demo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6BF51E7919F8F0E00000754A /* Project object */;
 }

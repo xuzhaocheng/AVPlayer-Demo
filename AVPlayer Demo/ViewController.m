@@ -301,7 +301,7 @@ static const NSString *ItemRateContext;
 {
     if ([keyPath isEqualToString:kStatusKey] && context == &ItemStatusContext) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self playItemStatusChanged:[[change objectForKey:NSKeyValueChangeNewKey] integerValue]];
+            [self playItemStatusChanged:[[change objectForKey:NSKeyValueChangeNewKey] integerValue] object:object];
         });
     } else if ([keyPath isEqualToString:kRateKey] && context == &ItemRateContext) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -312,7 +312,7 @@ static const NSString *ItemRateContext;
     }
 }
 
-- (void)playItemStatusChanged:(AVPlayerItemStatus)status
+- (void)playItemStatusChanged:(AVPlayerItemStatus)status object:(id)object
 {
     [self syncPlayPauseButtons];
 
@@ -322,9 +322,16 @@ static const NSString *ItemRateContext;
             [self enableSlider];
             [self initSliderTimer];
             break;
-        case AVPlayerStatusFailed:
+        case AVPlayerStatusFailed: {
+            AVPlayerItem *thePlayerItem = (AVPlayerItem *)object;
+            [self assetFailedToPrepareForPlayback:thePlayerItem.error];
+        }
             break;
         case AVPlayerStatusUnknown:
+            [self removePlayerTimeObserver];
+            [self syncSlider];
+            [self disableSlider];
+            [self setPlayerButtonsEnabled:NO];
             break;
         default:
             break;

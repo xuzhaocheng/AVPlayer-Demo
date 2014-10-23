@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ubY-hf-VVq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--AVPlayer-->
@@ -36,7 +35,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-az-Moy">
-                                <rect key="frame" x="14" y="72" width="292" height="31"/>
+                                <rect key="frame" x="18" y="72" width="284" height="31"/>
                                 <connections>
                                     <action selector="beginScrubbing:" destination="vXZ-lx-hvc" eventType="touchDown" id="ooZ-CO-eHY"/>
                                     <action selector="endScrubbing:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="Fyg-O8-lhV"/>
@@ -48,13 +47,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="3fl-hI-u3U" secondAttribute="centerX" id="46p-l6-WO4"/>
-                            <constraint firstItem="c3E-az-Moy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ah0-XJ-6Ik"/>
+                            <constraint firstAttribute="trailing" secondItem="c3E-az-Moy" secondAttribute="trailing" constant="20" symbolic="YES" id="8iT-fz-fYc"/>
                             <constraint firstAttribute="centerX" secondItem="5T4-tL-aJv" secondAttribute="centerX" id="CAV-x1-47x"/>
+                            <constraint firstItem="c3E-az-Moy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="DXQ-yg-pmt"/>
                             <constraint firstAttribute="centerX" secondItem="c3E-az-Moy" secondAttribute="centerX" id="HoD-9D-lNe"/>
                             <constraint firstAttribute="centerY" secondItem="5T4-tL-aJv" secondAttribute="centerY" id="LGR-hD-Mg4"/>
                             <constraint firstAttribute="centerY" secondItem="3fl-hI-u3U" secondAttribute="centerY" id="OsB-Jt-SZ8"/>
-                            <constraint firstItem="c3E-az-Moy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="QL0-hN-r69"/>
-                            <constraint firstItem="c3E-az-Moy" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="pT0-ev-0aT"/>
+                            <constraint firstItem="c3E-az-Moy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="QL0-hN-r69"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AVPlayer" id="Aaa-aU-DTz">
